@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spam Detector Interface</title>
+    <link href="https://fonts.cdnfonts.com/css/anurati" rel="stylesheet">
+    <link rel="stylesheet" type="text/CSS" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/PreLoader.css" />
+</head>
+
+<body>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <div id="toast"></div>
+    <div class="Container">
+        <form onsubmit="return false">
+            <h1>SPAM DETECTOR!</h1>
+            <textarea id="Textarea" cols="30" rows="10" placeholder="Enter you mail."></textarea>
+            <button class="replace" onclick="fetchFormData()">CHECK</button>
+            <button class="buttonload">
+                <i class="fa fa-spinner fa-spin"></i>Loading
+            </button>
+        </form>
+        <div style="background-image:url('./assets/bluemsg.png');" id="icon1" class="icons"></div>
+        <div style="background-image:url('./assets/filter.webp');" id="icon2" class="icons"></div>
+        <div style="background-image:url('./assets/filter1.png');" id="icon3" class="icons"></div>
+        <div style="background-image:url('./assets/messageicon.png');" id="icon4" class="icons"></div>
+        <div style="background-image:url('./assets/texticon.webp');" id="icon5" class="icons"></div>
+        <div style="background-image:url('./assets/spam.webp');" id="icon6" class="icons"></div>
+        <div style="background-image:url('./assets/bluemsg.png');" id="icon7" class="icons"></div>
+        <div id="image1" class="images"></div>
+        <div id="image2" class="images"></div>
+    </div>
+    <span id='heading'>CONTRIBUTORS - </span>
+    <div id="profiles_details">
+        <section id="Somtirtha" class="contributors_details">
+            <span>SOMTHIRTHA</span>
+            <a href="https://github.com/SomthirthaXD" target="_blank"><img
+                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" /></a>
+            <a><img src="https://www.svgrepo.com/show/364604/instagram-logo-fill.svg" alt="Instagram" /></a>
+            <a><img src="https://cdn-icons-png.flaticon.com/512/49/49408.png" alt="LinkedIn" /></a>
+        </section>
+        <section id="Atrayee" class="contributors_details">
+            <span>ATRAYEE </span>
+            <a><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" /></a>
+            <a href="https://www.instagram.com/das.bombshell/?hl=en" target="_blank"><img
+                    src="https://www.svgrepo.com/show/364604/instagram-logo-fill.svg" alt="Instagram" /></a>
+            <a><img src="https://cdn-icons-png.flaticon.com/512/49/49408.png" alt="LinkedIn" /></a>
+        </section>
+    </div>
+    <script src="./index.js" defer></script>
+</body>
+
+</html>
